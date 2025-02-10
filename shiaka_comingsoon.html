@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Coming Soon</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .container {
+      text-align: center;
+    }
+
+    .logo {
+      display: block;
+      margin: 0 auto;
+      max-width: 500px; 
+      opacity: 0;
+      animation: fadeIn 2s forwards;
+    }
+
+    .coming-soon {
+      font-size: 32px;
+      font-weight: bold;
+      color: #ab7511;
+      opacity: 0;
+      animation: fadeIn 2s 2s forwards;
+    }
+
+    @keyframes fadeIn {
+      0% {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <img src="public/shiaka-logo.jpeg" alt="Logo" class="logo">
+    <div class="coming-soon">Coming Soon</div>
+  </div>
+</body>
+</html>
