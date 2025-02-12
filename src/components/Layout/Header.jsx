@@ -10,7 +10,7 @@ import Link from "next/link";
 
 const textElem = [
   { link: "/", name: "Home" },
-  { link: "/about", name: "About" },
+  { link: "/about", name: "About Us" },
   { link: "/services", name: "Services" },
   { link: "/gallery", name: "Gallery" },
   { link: "/contact", name: "Contact Us" },
@@ -54,7 +54,7 @@ export function Header() {
   }, []);
 
   return (
-    <Navbar className="container mx-auto px-4 md:px-32 py-2 w-full rounded-none shadow-none max-w-none bg-[#388fa8] border-none border-transparent">
+    <Navbar className="container mx-auto px-4 md:px-32 py-2 w-full rounded-none shadow-none max-w-none !bg-[#388fa8] border-none border-transparent sticky top-0 z-[99999]">
       <div className="flex items-center justify-between text-blue-gray-900">
         <div>
           <Link href={"/"}>

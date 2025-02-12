@@ -3,44 +3,13 @@ import React from "react";
 import Projects from "./Projects";
 import DesignFuture from "./DesignFuture";
 import Image from "next/image";
-
-const solutionCards = [
-  {
-    sr: "01",
-    title: "Process Engineering",
-    desc: "We help buildings achieve their most ambitious goals by designing efficient, sustainable, and resilient infrastructure.",
-  },
-  {
-    sr: "02",
-    title: "Construction Services",
-    desc: "We help buildings achieve their most ambitious goals by designing efficient, sustainable, and resilient infrastructure.",
-  },
-  {
-    sr: "03",
-    title: "Civil Engineering",
-    desc: "We help buildings achieve their most ambitious goals by designing efficient, sustainable, and resilient infrastructure.",
-  },
-  {
-    sr: "04",
-    title: "Electrical Engineering",
-    desc: "We help buildings achieve their most ambitious goals by designing efficient, sustainable, and resilient infrastructure.",
-  },
-  {
-    sr: "05",
-    title: "Chemistry and Metallurgy",
-    desc: "We help buildings achieve their most ambitious goals by designing efficient, sustainable, and resilient infrastructure.",
-  },
-  {
-    sr: "06",
-    title: "Specialty Services",
-    desc: "We help buildings achieve their most ambitious goals by designing efficient, sustainable, and resilient infrastructure.",
-  },
-];
+import WorkCard from "./WorkCard";
+import CoreValues from "./CoreValues";
 
 const Main = () => {
   return (
     <div className="">
-      <div className="relative w-full h-[680px]">
+      <div className="relative w-full h-[640px]">
         <div className="absolute inset-0 building-bg bg-[#001f3f]">
           <div className=" text-white text-4xl font-bold z-10 px-4 md:px-32 flex flex-col h-full justify-center">
             <div className="relative">
@@ -59,8 +28,8 @@ const Main = () => {
           </div>
         </div>
       </div>
-      <div className="container mx-auto px-4 pt-10">
-        <div>
+      <div className="container mx-auto px-4 py-10">
+        {/* <div>
           <Typography className="uppercase">What we do</Typography>
         </div>
         <div>
@@ -79,20 +48,29 @@ const Main = () => {
                 <Typography className="text-4xl py-2 text-gray-400">
                   {item.sr}
                 </Typography>
-                <Typography className="text-2xl font-bold py-2">
+                <div className="text-4xl py-2 text-gray-400 flex justify-center">
+                  {item.sr}
+                </div>
+                <Typography className="text-2xl font-bold py-2 text-center">
                   {item.title}
                 </Typography>
-                <Typography>{item.desc}</Typography>
+                <Typography className="text-center">{item.desc}</Typography>
               </div>
             ))}
           </div>
+        </div> */}
+        <WorkCard />
+      </div>
+      <div className="bg-[#001f3f]">
+        <div className="container mx-auto px-4 text-white">
+          <Projects />
         </div>
       </div>
       <div className="container mx-auto px-4 py-10">
-        <Projects />
+        <DesignFuture />
       </div>
       <div className="container mx-auto px-4 py-10">
-        <DesignFuture />
+        <CoreValues />
       </div>
     </div>
   );

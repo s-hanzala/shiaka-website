@@ -45,23 +45,23 @@ const DesignFuture = () => {
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
         <div className="md:w-full">
           <Typography className="font-bold w-[400px]" variant="h2">
-            <span className="text-[#ab7511]">Design Future</span> with
+            <span className="text-[#5ba1b5]">Design Future</span> with
             Excellence
           </Typography>
           <div>
             <ul>
               <div className="flex items-center">
-                <GoDotFill className="flex items-center text-[#ab7511]" />
+                <GoDotFill className="flex items-center text-[#5ba1b5]" />
                 <li className="flex items-center text-lg">
                   Building the future with ideas
                 </li>
               </div>
               <div className="flex items-center">
-                <GoDotFill className="flex items-center text-[#ab7511]" />
+                <GoDotFill className="flex items-center text-[#5ba1b5]" />
                 <li className="text-lg">Designing future with excellence</li>
               </div>
               <div className="flex items-center">
-                <GoDotFill className="flex items-center text-[#ab7511]" />
+                <GoDotFill className="flex items-center text-[#5ba1b5]" />
                 <li className="text-lg">Discovering possibility concrete</li>
               </div>
             </ul>
@@ -71,7 +71,7 @@ const DesignFuture = () => {
         {designFuture.map((item, index) => (
           <div
             key={index}
-            className="border-2 border-gray-500 hover:border-[#ab7511] p-4 rounded-lg md:w-[320px]"
+            className="border-2 border-gray-500 hover:border-[#5ba1b5] p-4 rounded-lg md:w-[320px]"
           >
             <div className="text-[50px] py-2">{item.icon}</div>
             <div className="py-2">

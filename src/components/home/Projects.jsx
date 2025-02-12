@@ -6,26 +6,26 @@ import { MdOutlineLocationOn } from "react-icons/md";
 const projectArray = [
   {
     id: 1,
-    title: "Jazzy Elite Construction Shopping",
-    image: "/01.jpg",
+    title: "Water Tank Cleaning",
+    image: "/folder2/watertank1.jpeg",
     location: "100 Sunrise Ct Hamel, Minnesota",
   },
   {
     id: 2,
-    title: "Fresh Concept Construction Renovation",
-    image: "/02.jpg",
+    title: "Water Tank Cleaning",
+    image: "/folder2/watertank2.jpeg",
     location: "Rocky Highway Port Juana",
   },
   {
     id: 3,
-    title: "Installation a Supply System",
-    image: "/03.jpg",
+    title: "Kitchen Hood Cleaning",
+    image: "/folder2/kitchenhood.jpeg",
     location: "Wuckert Junctions Hermannberg",
   },
   {
     id: 4,
-    title: "Reconstruction of Old Factory Building",
-    image: "/04.jpg",
+    title: "Rennovation",
+    image: "/02.jpg",
     location: "Stoltenberg Underpass Blockbury",
   },
 ];
@@ -39,7 +39,7 @@ const Projects = () => {
         </div>
         <div>
           <Typography className="font-bold w-[400px]" variant="h2">
-            Our <span className="text-[#ab7511]">Projects</span>
+            Our <span className="text-[#5ba1b5]">Projects</span>
           </Typography>
         </div>
         <div className="py-4">
@@ -60,18 +60,18 @@ const Projects = () => {
                     {item.title}
                   </Typography>
                 </div>
-                <div className="border-t-2 border-[#ab7511] my-4 md:w-[550px]"></div>
+                <div className="border-t-2 border-[#5ba1b5] my-4 md:w-[550px]"></div>
                 <div className="flex justify-between md:w-[550px]">
-                  <div className="flex">
+                  {/* <div className="flex">
                     <div>
-                      <MdOutlineLocationOn className="text-2xl text-[#ab7511]" />
+                      <MdOutlineLocationOn className="text-2xl text-[#5ba1b5]" />
                     </div>
                     <div>
                       <Typography>{item.location}</Typography>
                     </div>
-                  </div>
+                  </div> */}
                   <div>
-                    <Typography className="text-lg uppercase text-[#ab7511]">
+                    <Typography className="text-lg uppercase text-[#5ba1b5]">
                       Details
                     </Typography>
                   </div>
